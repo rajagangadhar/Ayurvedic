@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurvedic Remedies for Headache</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/flowers.png');
+            background-repeat: repeat;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcccb;
+            border-bottom: 4px solid #ff9999;
+            position: relative;
+        }
+        header h1 {
+            color: #a0522d;
+            font-size: 2.5em;
+        }
+        .button-85 {
+            padding: 0.6em 2em;
+            border: none;
+            outline: none;
+            color: rgb(255, 255, 255);
+            background: #111;
+            cursor: pointer;
+            position: absolute;
+            z-index: 0;
+            border-radius: 10px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            transition: background-color 0.3s ease;
+        }
+        .button-85:before {
+            content: "";
+            background: linear-gradient(
+                45deg,
+                #ff0000,
+                #ff7300,
+                #fffb00,
+                #48ff00,
+                #00ffd5,
+                #002bff,
+                #7a00ff,
+                #ff00c8,
+                #ff0000
+            );
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing-button-85 20s linear infinite;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        @keyframes glowing-button-85 {
+            0% {
+                background-position: 0 0;
+            }
+            50% {
+                background-position: 400% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        .button-85:after {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #d68181;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+        #darkModeToggle {
+            right: 20px;
+            top: 5px;
+        }
+        #translateButton {
+            right: 160px;
+            top: 5px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fffafa;
+            border: 2px solid #ff9999;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        section img {
+            width: 100%;
+            max-width: 849px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcccb;
+            border-top: 4px solid #ff9999;
+        }
+        footer h2 {
+            color: #a0522d;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        footer iframe {
+            width: 100%;
+            max-width: 849px;
+            height: auto;
+            aspect-ratio: 16/9;
+            border: none;
+        }
+
+        body.dark-mode {
+            background-color: #333;
+            color: #f0f0f0;
+        }
+        header.dark-mode {
+            background-color: #444;
+            border-bottom-color: #666;
+        }
+        section.dark-mode {
+            background-color: #555;
+            border-color: #777;
+        }
+        footer.dark-mode {
+            background-color: #444;
+            border-top-color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ayurvedic Remedies for Headache</h1>
+    <button id="darkModeToggle" class="button-85">Dark Mode</button>
+    <button id="translateButton" class="button-85">తెలుగు</button>
+</header>
+
+<section>
+    <h2>Natural Ayurvedic Remedies</h2>
+    <img src="https://thumbs4.imagebam.com/60/ad/5b/MEVQZ0S_t.jpg" alt="head ache.jpg"/></a>
+    <p>Headaches can be caused by stress, dehydration, or other factors. Here are some Ayurvedic remedies to help relieve headaches:</p>
+    <ul>
+        <li><strong>Ginger Paste:</strong> Applying a paste of ginger powder and water on the forehead can help alleviate headaches.</li>
+        <li><strong>Peppermint Oil:</strong> Massaging peppermint oil on the temples can reduce headache symptoms.</li>
+        <li><strong>Basil Tea:</strong> Drinking basil tea can provide relief from tension headaches.</li>
+        <li><strong>Cinnamon Paste:</strong> Make a paste of cinnamon and apply it on the forehead to soothe headache pain.</li>
+    </ul>
+</section>
+
+<footer>
+    <h2>Most Liked Video on Ayurvedic Remedies for Headache (Telugu)</h2>
+    <iframe src="https://www.youtube.com/embed/1teLp7EX_NA?si=DxH8DurE19wbunhl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</footer>
+
+<script>
+    let isTranslated = false;
+
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        document.querySelector('header').classList.toggle('dark-mode');
+        document.querySelector('section').classList.toggle('dark-mode');
+        document.querySelector('footer').classList.toggle('dark-mode');
+
+        if (document.body.classList.contains('dark-mode')) {
+            darkModeToggle.textContent = 'Light Mode';
+        } else {
+            darkModeToggle.textContent = 'Dark Mode';
+        }
+    });
+
+    const translateButton = document.getElementById('translateButton');
+    translateButton.addEventListener('click', () => {
+        if (!isTranslated) {
+            document.querySelector('h1').textContent = 'తలనొప్పి కోసం ఆయుర్వేద చికిత్సలు';
+            document.querySelector('h2').textContent = 'స్వాభావిక ఆయుర్వేద చికిత్సలు';
+            document.querySelector('p').textContent = 'తలనొప్పి ఒత్తిడి, డీహైడ్రేషన్ లేదా ఇతర కారణాలతో సంభవిస్తుంది. ఇక్కడ కొన్ని ఆయుర్వేద చికిత్సలు ఉన్నాయి:';
+            document.querySelectorAll('li')[0].innerHTML = '<strong>అల్లం పేస్ట్:</strong> అల్లం పొడి మరియు నీటితో తయారు చేసిన పేస్ట్‌ను నుదిటిపై రాసినట్లయితే తలనొప్పి తగ్గుతుంది.';
+            document.querySelectorAll('li')[1].innerHTML = '<strong>పుదీనా నూనె:</strong> పుదీనా నూనెను రెండు కంటిపాపలపై మసాజ్ చేయడం తలనొప్పి లక్షణాలను తగ్గిస్తుంది.';
+            document.querySelectorAll('li')[2].innerHTML = '<strong>తులసి టీ:</strong> తులసి టీ త్రాగడం ఒత్తిడి తలనొప్పి నుండి ఉపశమనాన్ని ఇస్తుంది.';
+            document.querySelectorAll('li')[3].innerHTML = '<strong>దాల్చిన చెక్క పేస్ట్:</strong> దాల్చిన చెక్క పేస్ట్‌ను నుదిటిపై రాస్తే తలనొప్పి నొప్పిని ఉపశమనం చేస్తుంది.';
+            document.querySelector('footer h2').textContent = 'తలనొప్పి కోసం ఆయుర్వేద చికిత్సలపై ఎక్కువగా లైక్ చేసిన వీడియో (తెలుగు)';
+            translateButton.textContent = 'English';
+        } else {
+            document.querySelector('h1').textContent = 'Ayurvedic Remedies for Headache';
+            document.querySelector('h2').textContent = 'Natural Ayurvedic Remedies';
+            document.querySelector('p').textContent = 'Headaches can be caused by stress, dehydration, or other factors. Here are some Ayurvedic remedies to help relieve headaches:';
+            document.querySelectorAll('li')[0].innerHTML = '<strong>Ginger Paste:</strong> Applying a paste of ginger powder and water on the forehead can help alleviate headaches.';
+            document.querySelectorAll('li')[1].innerHTML = '<strong>Peppermint Oil:</strong> Massaging peppermint oil on the temples can reduce headache symptoms.';
+            document.querySelectorAll('li')[2].innerHTML = '<strong>Basil Tea:</strong> Drinking basil tea can provide relief from tension headaches.';
+            document.querySelectorAll('li')[3].innerHTML = '<strong>Cinnamon Paste:</strong> Make a paste of cinnamon and apply it on the forehead to soothe headache pain.';
+            document.querySelector('footer h2').textContent = 'Most Liked Video on Ayurvedic Remedies for Headache (Telugu)';
+            translateButton.textContent = 'తెలుగు';
+        }
+        isTranslated = !isTranslated;
+
+        let tempRight = darkModeToggle.style.right;
+        darkModeToggle.style.right = translateButton.style.right;
+        translateButton.style.right = tempRight;
+    });
+</script>
+
+</body>
+</html>

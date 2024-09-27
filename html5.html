@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurvedic Remedies for Stomach Pain</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/flowers.png');
+            background-repeat: repeat;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcccb;
+            border-bottom: 4px solid #ff9999;
+            position: relative;
+        }
+        header h1 {
+            color: #a0522d;
+            font-size: 2.5em;
+        }
+        .button-85 {
+            padding: 0.6em 2em;
+            border: none;
+            outline: none;
+            color: rgb(255, 255, 255);
+            background: #111; 
+            cursor: pointer;
+            position: absolute;
+            z-index: 0;
+            border-radius: 10px;
+            user-select: none;
+            transition: background-color 0.3s ease;
+        }
+        .button-85:before {
+            content: "";
+            background: linear-gradient(
+                45deg,
+                #ff0000,
+                #ff7300,
+                #fffb00,
+                #48ff00,
+                #00ffd5,
+                #002bff,
+                #7a00ff,
+                #ff00c8,
+                #ff0000
+            );
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing-button-85 20s linear infinite;
+            border-radius: 10px;
+        }
+
+        @keyframes glowing-button-85 {
+            0% {
+                background-position: 0 0;
+            }
+            50% {
+                background-position: 400% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        .button-85:after {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #d68181;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+        #darkModeToggle {
+            right: 20px;
+            top: 5px;
+        }
+        #translateButton {
+            right: 160px;
+            top: 5px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fffafa;
+            border: 2px solid #ff9999;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        section img {
+            width: 100%;
+            max-width: 849px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcccb;
+            border-top: 4px solid #ff9999;
+        }
+        footer h2 {
+            color: #a0522d;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        footer iframe {
+            width: 100%;
+            max-width: 849px;
+            height: auto;
+            aspect-ratio: 16/9;
+            border: none;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #f0f0f0;
+        }
+        header.dark-mode {
+            background-color: #444;
+            border-bottom-color: #666;
+        }
+        section.dark-mode {
+            background-color: #555;
+            border-color: #777;
+        }
+        footer.dark-mode {
+            background-color: #444;
+            border-top-color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ayurvedic Remedies for Stomach Pain</h1>
+    <button id="darkModeToggle" class="button-85">Dark Mode</button>
+    <button id="translateButton" class="button-85">తెలుగు</button>
+</header>
+
+<section>
+    <h2>Natural Ayurvedic Remedies</h2>
+    <img src="https://static.independent.co.uk/2023/03/28/12/28111424-67008a5b-8502-483b-aba6-4471be4882c1.jpg" alt="Stomach Pain Image">
+    <p>Stomach pain can be relieved using Ayurvedic remedies. Here are some remedies:</p>
+    <ul>
+        <li><strong>Ajwain (Carom Seeds):</strong> Chewing ajwain seeds or drinking ajwain water helps relieve indigestion and stomach pain.</li>
+        <li><strong>Ginger Tea:</strong> Drinking ginger tea improves digestion and reduces stomach cramps.</li>
+        <li><strong>Fennel Seeds:</strong> Consuming fennel seeds or fennel tea soothes stomach discomfort and bloating.</li>
+        <li><strong>Aloe Vera Juice:</strong> Aloe vera has anti-inflammatory properties that help reduce stomach inflammation.</li>
+    </ul>
+</section>
+
+<footer>
+    <h2>Most Liked Video on Ayurvedic Remedies for Stomach Pain (Telugu)</h2>
+    <iframe src="https://www.youtube.com/embed/cUnBaq2aMRc?si=3xoVcQNtLxiHQEJx"></iframe>
+</footer>
+
+<script>
+    let isTranslated = false;
+
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        document.querySelector('header').classList.toggle('dark-mode');
+        document.querySelector('section').classList.toggle('dark-mode');
+        document.querySelector('footer').classList.toggle('dark-mode');
+
+        if (document.body.classList.contains('dark-mode')) {
+            darkModeToggle.textContent = 'Light Mode';
+        } else {
+            darkModeToggle.textContent = 'Dark Mode';
+        }
+    });
+
+    const translateButton = document.getElementById('translateButton');
+    translateButton.addEventListener('click', () => {
+        if (!isTranslated) {
+            document.querySelector('h1').textContent = 'కడుపు నొప్పి కోసం ఆయుర్వేద చికిత్సలు';
+            document.querySelector('h2').textContent = 'స్వాభావిక ఆయుర్వేద చికిత్సలు';
+            document.querySelector('p').textContent = 'కడుపు నొప్పిని ఆయుర్వేద చికిత్సలతో సులభంగా తగ్గించవచ్చు. కొన్ని చికిత్సలు ఇక్కడ ఉన్నాయి:';
+            document.querySelectorAll('li')[0].innerHTML = '<strong>వాము:</strong> వాము గింజలను నమలడం లేదా వాము నీరు త్రాగడం జీర్ణక్రియను మెరుగుపరచి కడుపు నొప్పిని తగ్గిస్తుంది.';
+            document.querySelectorAll('li')[1].innerHTML = '<strong>అల్లం టీ:</strong> అల్లం టీ త్రాగడం జీర్ణక్రియను మెరుగుపరచి కడుపు నొప్పిని తగ్గిస్తుంది.';
+            document.querySelectorAll('li')[2].innerHTML = '<strong>సోంపు గింజలు:</strong> సోంపు గింజలు లేదా సోంపు టీ త్రాగడం కడుపు అసౌకర్యాన్ని తగ్గిస్తుంది.';
+            document.querySelectorAll('li')[3].innerHTML = '<strong>గృహకుమారి రసం:</strong> గృహకుమారిలో ఉన్న యాంటీ-ఇన్‌ఫ్లమేటరీ లక్షణాలు కడుపులో వాపును తగ్గిస్తాయి.';
+            document.querySelector('footer h2').textContent = 'కడుపు నొప్పి కోసం ఆయుర్వేద చికిత్సలపై ఎక్కువగా లైక్ చేసిన వీడియో (తెలుగు)';
+            translateButton.textContent = 'English';
+        } else {
+            document.querySelector('h1').textContent = 'Ayurvedic Remedies for Stomach Pain';
+            document.querySelector('h2').textContent = 'Natural Ayurvedic Remedies';
+            document.querySelector('p').textContent = 'Stomach pain can be relieved using Ayurvedic remedies. Here are some remedies:';
+            document.querySelectorAll('li')[0].innerHTML = '<strong>Ajwain (Carom Seeds):</strong> Chewing ajwain seeds or drinking ajwain water helps relieve indigestion and stomach pain.';
+            document.querySelectorAll('li')[1].innerHTML = '<strong>Ginger Tea:</strong> Drinking ginger tea improves digestion and reduces stomach cramps.';
+            document.querySelectorAll('li')[2].innerHTML = '<strong>Fennel Seeds:</strong> Consuming fennel seeds or fennel tea soothes stomach discomfort and bloating.';
+            document.querySelectorAll('li')[3].innerHTML = '<strong>Aloe Vera Juice:</strong> Aloe vera has anti-inflammatory properties that help reduce stomach inflammation.';
+            document.querySelector('footer h2').textContent = 'Most Liked Video on Ayurvedic Remedies for Stomach Pain (Telugu)';
+            translateButton.textContent = 'తెలుగు';
+        }
+        isTranslated = !isTranslated;
+
+        let tempRight = darkModeToggle.style.right;
+        darkModeToggle.style.right = translateButton.style.right;
+        translateButton.style.right = tempRight;
+    });
+</script>
+
+</body>
+</html>

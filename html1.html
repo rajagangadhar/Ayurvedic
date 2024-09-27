@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurvedic Remedies for Fever</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/flowers.png');
+            background-repeat: repeat;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcccb;
+            border-bottom: 4px solid #ff9999;
+            position: relative;
+        }
+        header h1 {
+            color: #a0522d;
+            font-size: 2.5em;
+        }
+        .button-85 {
+            padding: 0.6em 2em;
+            border: none;
+            outline: none;
+            color: rgb(255, 255, 255);
+            background: #111; /* Changed background color for light mode */
+            cursor: pointer;
+            position: absolute;
+            z-index: 0;
+            border-radius: 10px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            transition: background-color 0.3s ease;
+        }
+        .button-85:before {
+            content: "";
+            background: linear-gradient(
+                45deg,
+                #ff0000,
+                #ff7300,
+                #fffb00,
+                #48ff00,
+                #00ffd5,
+                #002bff,
+                #7a00ff,
+                #ff00c8,
+                #ff0000
+            );
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing-button-85 20s linear infinite;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        @keyframes glowing-button-85 {
+            0% {
+                background-position: 0 0;
+            }
+            50% {
+                background-position: 400% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        .button-85:after {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #d68181;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+        #darkModeToggle {
+            right: 20px;
+            top: 5px;  /* Adjust the position */
+        }
+        #translateButton {
+            right: 160px;
+            top: 5px;  /* Adjust the position */
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fffafa;
+            border: 2px solid #ff9999;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        section img {
+            width: 100%;
+            max-width: 849px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcccb;
+            border-top: 4px solid #ff9999;
+        }
+        footer h2 {
+            color: #a0522d;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        footer iframe {
+            width: 100%;
+            max-width: 849px;
+            height: auto;
+            aspect-ratio: 16/9;
+            border: none;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #f0f0f0;
+        }
+        header.dark-mode {
+            background-color: #444;
+            border-bottom-color: #666;
+        }
+        section.dark-mode {
+            background-color: #555;
+            border-color: #777;
+        }
+        footer.dark-mode {
+            background-color: #444;
+            border-top-color: #666;
+        }
+        .button-85:before.dark-mode {
+            background-color: #111; /* Keep the dark mode button the same */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ayurvedic Remedies for Fever</h1>
+    <button id="darkModeToggle" class="button-85">Dark Mode</button>
+    <button id="translateButton" class="button-85">తెలుగు</button>
+</header>
+
+<section>
+    <h2>Natural Ayurvedic Remedies</h2>
+    <img src="https://intermountainhealthcare.org/-/media/images/intermountain-health/blogs/blog/posts/2013/10/fever.ashx?h=565&iar=0&w=849&hash=1DFE01CA5D6A21F07F39B4FA8E5DFB7A" alt="Fever Image">
+    <p>Fever is a common health issue that can be treated effectively with Ayurvedic remedies. Here are some remedies:</p>
+    <ul>
+        <li><strong>Tulsi Leaves:</strong> Boil some tulsi leaves in water and drink it regularly to reduce fever.</li>
+        <li><strong>Ginger Tea:</strong> A cup of ginger tea helps in sweating out toxins and lowering fever.</li>
+        <li><strong>Turmeric Milk:</strong> Turmeric has anti-inflammatory properties that can help reduce fever.</li>
+        <li><strong>Coriander Tea:</strong> Coriander seeds boiled in water can help reduce fever naturally.</li>
+    </ul>
+</section>
+
+<footer>
+    <h2>Most Liked Video on Ayurvedic Remedies for Fever (Telugu)</h2>
+    <iframe src="https://www.youtube.com/embed/Hco2ywVngO4"></iframe>
+</footer>
+
+<script>
+    let isTranslated = false;
+
+    // Function to toggle dark mode
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        document.querySelector('header').classList.toggle('dark-mode');
+        document.querySelector('section').classList.toggle('dark-mode');
+        document.querySelector('footer').classList.toggle('dark-mode');
+
+        // Change button text based on mode
+        if (document.body.classList.contains('dark-mode')) {
+            darkModeToggle.textContent = 'Light Mode';
+        } else {
+            darkModeToggle.textContent = 'Dark Mode';
+        }
+    });
+
+    // Function to translate page content between Telugu and English
+    const translateButton = document.getElementById('translateButton');
+    translateButton.addEventListener('click', () => {
+        if (!isTranslated) {
+            // Translate to Telugu
+            document.querySelector('h1').textContent = 'జ్వరం కోసం ఆయుర్వేద చికిత్సలు';
+            document.querySelector('h2').textContent = 'స్వాభావిక ఆయుర్వేద చికిత్సలు';
+            document.querySelector('p').textContent = 'జ్వరం సాధారణ ఆరోగ్య సమస్య, దాన్ని ఆయుర్వేద చికిత్సలతో సమర్థవంతంగా తగ్గించవచ్చు. కొన్ని చికిత్సలు ఇక్కడ ఉన్నాయి:';
+            document.querySelectorAll('li')[0].innerHTML = '<strong>తులసి ఆకులు:</strong> తులసి ఆకులను నీటిలో మరిగించి త్రాగితే జ్వరం తగ్గుతుంది.';
+            document.querySelectorAll('li')[1].innerHTML = '<strong>అల్లం టీ:</strong> అల్లం టీ త్రాగితే శరీరంలో విషాలు చెమట ద్వారా బయటకు వస్తాయి, జ్వరం తగ్గుతుంది.';
+            document.querySelectorAll('li')[2].innerHTML = '<strong>పసుపు పాలు:</strong> పసుపులో ఉన్న యాంటీ-ఇన్‌ఫ్లమేటరీ లక్షణాలు జ్వరాన్ని తగ్గించడంలో సహాయపడతాయి.';
+            document.querySelectorAll('li')[3].innerHTML = '<strong>ధనియాల టీ:</strong> ధనియాలు నీటిలో మరిగించి త్రాగితే సహజంగా జ్వరం తగ్గుతుంది.';
+            document.querySelector('footer h2').textContent = 'జ్వరం కోసం ఆయుర్వేద చికిత్సలపై ఎక్కువగా లైక్ చేసిన వీడియో (తెలుగు)';
+            translateButton.textContent = 'English';
+        } else {
+            // Translate to English
+            document.querySelector('h1').textContent = 'Ayurvedic Remedies for Fever';
+            document.querySelector('h2').textContent = 'Natural Ayurvedic Remedies';
+            document.querySelector('p').textContent = 'Fever is a common health issue that can be treated effectively with Ayurvedic remedies. Here are some remedies:';
+            document.querySelectorAll('li')[0].innerHTML = '<strong>Tulsi Leaves:</strong> Boil some tulsi leaves in water and drink it regularly to reduce fever.';
+            document.querySelectorAll('li')[1].innerHTML = '<strong>Ginger Tea:</strong> A cup of ginger tea helps in sweating out toxins and lowering fever.';
+            document.querySelectorAll('li')[2].innerHTML = '<strong>Turmeric Milk:</strong> Turmeric has anti-inflammatory properties that can help reduce fever.';
+            document.querySelectorAll('li')[3].innerHTML = '<strong>Coriander Tea:</strong> Coriander seeds boiled in water can help reduce fever naturally.';
+            document.querySelector('footer h2').textContent = 'Most Liked Video on Ayurvedic Remedies for Fever (Telugu)';
+            translateButton.textContent = 'తెలుగు';
+        }
+        isTranslated = !isTranslated;
+
+        // Swap the positions of the buttons
+        let tempRight = darkModeToggle.style.right;
+        darkModeToggle.style.right = translateButton.style.right;
+        translateButton.style.right = tempRight;
+    });
+</script>
+
+</body>
+</html>

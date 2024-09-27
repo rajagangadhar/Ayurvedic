@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurvedic Remedies for High Blood Pressure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/flowers.png');
+            background-repeat: repeat;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcccb;
+            border-bottom: 4px solid #ff9999;
+            position: relative;
+        }
+        header h1 {
+            color: #a0522d;
+            font-size: 2.5em;
+        }
+        .button-85 {
+            padding: 0.6em 2em;
+            border: none;
+            outline: none;
+            color: rgb(255, 255, 255);
+            background: #111;
+            cursor: pointer;
+            position: absolute;
+            z-index: 0;
+            border-radius: 10px;
+            user-select: none;
+            transition: background-color 0.3s ease;
+        }
+        .button-85:before {
+            content: "";
+            background: linear-gradient(
+                45deg,
+                #ff0000,
+                #ff7300,
+                #fffb00,
+                #48ff00,
+                #00ffd5,
+                #002bff,
+                #7a00ff,
+                #ff00c8,
+                #ff0000
+            );
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing-button-85 20s linear infinite;
+            border-radius: 10px;
+        }
+
+        @keyframes glowing-button-85 {
+            0% {
+                background-position: 0 0;
+            }
+            50% {
+                background-position: 400% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        .button-85:after {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #d68181;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+        #darkModeToggle {
+            right: 20px;
+            top: 5px;
+        }
+        #translateButton {
+            right: 160px;
+            top: 5px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fffafa;
+            border: 2px solid #ff9999;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        section img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcccb;
+            border-top: 4px solid #ff9999;
+        }
+        footer h2 {
+            color: #a0522d;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        footer iframe {
+            width: 100%;
+            max-width: 849px;
+            height: auto;
+            aspect-ratio: 16/9;
+            border: none;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #f0f0f0;
+        }
+        header.dark-mode {
+            background-color: #444;
+            border-bottom-color: #666;
+        }
+        section.dark-mode {
+            background-color: #555;
+            border-color: #777;
+        }
+        footer.dark-mode {
+            background-color: #444;
+            border-top-color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ayurvedic Remedies for High Blood Pressure</h1>
+    <button id="darkModeToggle" class="button-85">Dark Mode</button>
+    <button id="translateButton" class="button-85">తెలుగు</button>
+</header>
+
+<section>
+    <h2>Natural Ayurvedic Remedies</h2>
+    <img src="https://www.verywellhealth.com/thmb/IwQxAg159Pwy_bINhD3r3LW5r8Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1172129269-6709df98ecdb4731a77639c08eb0b41f.jpg" alt="Stress and High Blood Pressure" width="600" />
+    <p>High blood pressure can be managed with several Ayurvedic remedies. Here are some suggestions:</p>
+    <ul>
+        <li><strong>Garlic:</strong> Garlic helps in lowering blood pressure by relaxing the blood vessels.</li>
+        <li><strong>Ashwagandha:</strong> This herb helps reduce stress, which is a key contributor to high blood pressure.</li>
+        <li><strong>Amla:</strong> Rich in vitamin C, Amla helps in improving heart health and reducing blood pressure.</li>
+        <li><strong>Yoga and Meditation:</strong> Regular practice of yoga and meditation can greatly reduce stress and help maintain normal blood pressure levels.</li>
+    </ul>
+</section>
+
+<footer>
+    <h2>Most Liked Video on Ayurvedic Remedies for High Blood Pressure (Telugu)</h2>
+    <iframe src="https://www.youtube.com/embed/CXHb1l1B2PM?si=evF3SK5XFA-jJSef"></iframe>
+</footer>
+
+<script>
+    let isTranslated = false;
+
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        document.querySelector('header').classList.toggle('dark-mode');
+        document.querySelector('section').classList.toggle('dark-mode');
+        document.querySelector('footer').classList.toggle('dark-mode');
+
+        if (document.body.classList.contains('dark-mode')) {
+            darkModeToggle.textContent = 'Light Mode';
+        } else {
+            darkModeToggle.textContent = 'Dark Mode';
+        }
+    });
+
+    const translateButton = document.getElementById('translateButton');
+    translateButton.addEventListener('click', () => {
+        if (!isTranslated) {
+            document.querySelector('h1').textContent = 'ఉన్నత రక్తపోటుకు ఆయుర్వేద చికిత్సలు';
+            document.querySelector('h2').textContent = 'స్వాభావిక ఆయుర్వేద చికిత్సలు';
+            document.querySelector('p').textContent = 'ఉన్నత రక్తపోటును నిర్వహించడానికి కొన్ని ఆయుర్వేద చికిత్సలు ఉన్నాయి. కొన్ని సూచనలు ఇక్కడ ఉన్నాయి:';
+            document.querySelectorAll('li')[0].innerHTML = '<strong>వెల్లులి:</strong> వెల్లులి రక్త నాళాలను విశ్రాంతి చేయించి రక్తపోటును తగ్గించడంలో సహాయపడుతుంది.';
+            document.querySelectorAll('li')[1].innerHTML = '<strong>అశ్వగంధా:</strong> ఈ మూలిక ఉద్గ్రతను తగ్గించి, ఇది ఉన్నత రక్తపోటుకు ప్రధాన కారణం అవుతుంది.';
+            document.querySelectorAll('li')[2].innerHTML = '<strong>ఆమ్లా:</strong> విటమిన్ C సమృద్ధిగా కలిగిన ఆమ్లా హృదయ ఆరోగ్యాన్ని మెరుగుపరచి రక్తపోటును తగ్గించడంలో సహాయపడుతుంది.';
+            document.querySelectorAll('li')[3].innerHTML = '<strong>యోగ మరియు ధ్యానం:</strong> యోగ మరియు ధ్యానం నిత్యంగా అభ్యాసం చేయడం ఉద్గ్రతను తగ్గించి, రక్తపోటును సాధారణంగా ఉంచడంలో సహాయపడుతుంది.';
+            document.querySelector('footer h2').textContent = 'ఉన్నత రక్తపోటుకు ఆయుర్వేద చికిత్సలపై ఎక్కువగా లైక్ చేసిన వీడియో (తెలుగు)';
+            translateButton.textContent = 'English';
+        } else {
+            document.querySelector('h1').textContent = 'Ayurvedic Remedies for High Blood Pressure';
+            document.querySelector('h2').textContent = 'Natural Ayurvedic Remedies';
+            document.querySelector('p').textContent = 'High blood pressure can be managed with several Ayurvedic remedies. Here are some suggestions:';
+            document.querySelectorAll('li')[0].innerHTML = '<strong>Garlic:</strong> Garlic helps in lowering blood pressure by relaxing the blood vessels.';
+            document.querySelectorAll('li')[1].innerHTML = '<strong>Ashwagandha:</strong> This herb helps reduce stress, which is a key contributor to high blood pressure.';
+            document.querySelectorAll('li')[2].innerHTML = '<strong>Amla:</strong> Rich in vitamin C, Amla helps in improving heart health and reducing blood pressure.';
+            document.querySelectorAll('li')[3].innerHTML = '<strong>Yoga and Meditation:</strong> Regular practice of yoga and meditation can greatly reduce stress and help maintain normal blood pressure levels.';
+            document.querySelector('footer h2').textContent = 'Most Liked Video on Ayurvedic Remedies for High Blood Pressure (Telugu)';
+            translateButton.textContent = 'తెలుగు';
+        }
+        isTranslated = !isTranslated;
+
+        let tempRight = darkModeToggle.style.right;
+        darkModeToggle.style.right = translateButton.style.right;
+        translateButton.style.right = tempRight;
+    });
+</script>
+
+</body>
+</html>

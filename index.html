@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter a Number Related To Your Issue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            width: 250px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            color: #343a40;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            padding: 10px;
+            font-size: 18px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Main content styling */
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        h1 {
+            color: #007bff;
+            text-align: center;
+        }
+
+        label, input, button {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar with number-to-disease mapping -->
+    <div class="sidebar">
+        <h2>Number to Disease</h2>
+        <ul>
+            <li>1 - Fever</li>
+            <li>2 - Diabetes</li>
+            <li>3 - Cold</li>
+            <li>4 - Headache</li>
+            <li>5 - Stomach Pain</li>
+            <li>6 - Knee Pains</li>
+            <li>7 - Body Pains</li>
+            <li>8 - Back Pain</li>
+            <li>9 - Cough</li>
+            <li>10 - High BP</li>
+        </ul>
+    </div>
+
+    <!-- Main content for file selection -->
+    <div class="main-content">
+        <h1>Enter a Number Related To Your Issue</h1>
+        <form id="htmlForm">
+            <label for="fileNumber">Enter a number between 1 and 15:</label>
+            <input type="number" id="fileNumber" name="fileNumber" min="1" max="15" required>
+            <button type="submit">Run</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("htmlForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var fileNumber = document.getElementById("fileNumber").value;
+
+            if (fileNumber >= 1 && fileNumber <= 15) {
+                // Redirect to the corresponding HTML file
+                window.location.href = "html" + fileNumber + ".html";
+            } else {
+                alert("Please enter a number between 1 and 15.");
+            }
+        });
+    </script>
+</body>
+</html>

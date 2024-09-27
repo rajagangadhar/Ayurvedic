@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurvedic Remedies for Body Pains</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/flowers.png');
+            background-repeat: repeat;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcccb;
+            border-bottom: 4px solid #ff9999;
+            position: relative;
+        }
+        header h1 {
+            color: #a0522d;
+            font-size: 2.5em;
+        }
+        .button-85 {
+            padding: 0.6em 2em;
+            border: none;
+            outline: none;
+            color: rgb(255, 255, 255);
+            background: #111; 
+            cursor: pointer;
+            position: absolute;
+            z-index: 0;
+            border-radius: 10px;
+            user-select: none;
+            transition: background-color 0.3s ease;
+        }
+        .button-85:before {
+            content: "";
+            background: linear-gradient(
+                45deg,
+                #ff0000,
+                #ff7300,
+                #fffb00,
+                #48ff00,
+                #00ffd5,
+                #002bff,
+                #7a00ff,
+                #ff00c8,
+                #ff0000
+            );
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing-button-85 20s linear infinite;
+            border-radius: 10px;
+        }
+
+        @keyframes glowing-button-85 {
+            0% {
+                background-position: 0 0;
+            }
+            50% {
+                background-position: 400% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        .button-85:after {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #d68181;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+        #darkModeToggle {
+            right: 20px;
+            top: 5px;
+        }
+        #translateButton {
+            right: 160px;
+            top: 5px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fffafa;
+            border: 2px solid #ff9999;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        section img {
+            width: 100%;
+            max-width: 849px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcccb;
+            border-top: 4px solid #ff9999;
+        }
+        footer h2 {
+            color: #a0522d;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        footer iframe {
+            width: 100%;
+            max-width: 849px;
+            height: auto;
+            aspect-ratio: 16/9;
+            border: none;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #f0f0f0;
+        }
+        header.dark-mode {
+            background-color: #444;
+            border-bottom-color: #666;
+        }
+        section.dark-mode {
+            background-color: #555;
+            border-color: #777;
+        }
+        footer.dark-mode {
+            background-color: #444;
+            border-top-color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ayurvedic Remedies for Body Pains</h1>
+    <button id="darkModeToggle" class="button-85">Dark Mode</button>
+    <button id="translateButton" class="button-85">తెలుగు</button>
+</header>
+
+<section>
+    <h2>Natural Ayurvedic Remedies</h2>
+    <img src="https://www.precisionpaincarerehab.com/editor-uploads/website-1004/b614-1639605599.jpg" alt="Body Pain Image">
+    <p>Body pains can be alleviated using various Ayurvedic remedies. Here are some effective ones:</p>
+    <ul>
+        <li><strong>Warm Oil Massage:</strong> Massaging with warm sesame oil or coconut oil can help relieve body pain and stiffness.</li>
+        <li><strong>Turmeric Milk:</strong> Drinking warm milk with turmeric can reduce inflammation and provide relief from body aches.</li>
+        <li><strong>Ginger Tea:</strong> Ginger tea has anti-inflammatory properties that can help reduce body pain and discomfort.</li>
+        <li><strong>Epsom Salt Bath:</strong> A bath with Epsom salt can help relax muscles and reduce body aches.</li>
+    </ul>
+</section>
+
+<footer>
+    <h2>Most Liked Video on Ayurvedic Remedies for Body Pains (Telugu)</h2>
+    <iframe src="https://www.youtube.com/embed/sdlJdfjsX_c?si=p9dMtytK6b83wubg"></iframe>
+</footer>
+
+<script>
+    let isTranslated = false;
+
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        document.querySelector('header').classList.toggle('dark-mode');
+        document.querySelector('section').classList.toggle('dark-mode');
+        document.querySelector('footer').classList.toggle('dark-mode');
+
+        if (document.body.classList.contains('dark-mode')) {
+            darkModeToggle.textContent = 'Light Mode';
+        } else {
+            darkModeToggle.textContent = 'Dark Mode';
+        }
+    });
+
+    const translateButton = document.getElementById('translateButton');
+    translateButton.addEventListener('click', () => {
+        if (!isTranslated) {
+            document.querySelector('h1').textContent = 'శరీర నొప్పి కోసం ఆయుర్వేద చికిత్సలు';
+            document.querySelector('h2').textContent = 'స్వాభావిక ఆయుర్వేద చికిత్సలు';
+            document.querySelector('p').textContent = 'శరీర నొప్పిని నయం చేసే వివిధ ఆయుర్వేద చికిత్సలు ఉన్నాయి. కొన్ని సమర్థవంతమైన చికిత్సలు ఇక్కడ ఉన్నాయి:';
+            document.querySelectorAll('li')[0].innerHTML = '<strong>గోపిచెట్టు నూనె మసాజ్:</strong> వేడి సెనగ నూనె లేదా కొబ్బరి నూనెతో మసాజ్ చేయడం శరీర నొప్పి మరియు కఠినతను తగ్గించగలదు.';
+            document.querySelectorAll('li')[1].innerHTML = '<strong>పసుపు పాలు:</strong> పసుపుతో కప్పు వేడి పాలు త్రాగడం వాపును తగ్గించి శరీర నొప్పిని కలిగి ఉండవచ్చు.';
+            document.querySelectorAll('li')[2].innerHTML = '<strong>అల్లం టీ:</strong> అల్లం టీలో యాంటీ-ఇన్‌ఫ్లమేటరీ లక్షణాలు ఉన్నాయి, ఇవి శరీర నొప్పిని తగ్గించగలవు.';
+            document.querySelectorAll('li')[3].innerHTML = '<strong>ఎప్సమ్ సాల్ట్ స్నాన:</strong> ఎప్సమ్ సాల్ట్‌తో స్నానం చేయడం మస్కుల్స్‌ని రిలాక్స్ చేస్తుంది మరియు శరీర నొప్పిని తగ్గిస్తుంది.';
+            document.querySelector('footer h2').textContent = 'శరీర నొప్పి కోసం ఆయుర్వేద చికిత్సలపై ఎక్కువగా లైక్ చేసిన వీడియో (తెలుగు)';
+            translateButton.textContent = 'English';
+        } else {
+            document.querySelector('h1').textContent = 'Ayurvedic Remedies for Body Pains';
+            document.querySelector('h2').textContent = 'Natural Ayurvedic Remedies';
+            document.querySelector('p').textContent = 'Body pains can be alleviated using various Ayurvedic remedies. Here are some effective ones:';
+            document.querySelectorAll('li')[0].innerHTML = '<strong>Warm Oil Massage:</strong> Massaging with warm sesame oil or coconut oil can help relieve body pain and stiffness.';
+            document.querySelectorAll('li')[1].innerHTML = '<strong>Turmeric Milk:</strong> Drinking warm milk with turmeric can reduce inflammation and provide relief from body aches.';
+            document.querySelectorAll('li')[2].innerHTML = '<strong>Ginger Tea:</strong> Ginger tea has anti-inflammatory properties that can help reduce body pain and discomfort.';
+            document.querySelectorAll('li')[3].innerHTML = '<strong>Epsom Salt Bath:</strong> A bath with Epsom salt can help relax muscles and reduce body aches.';
+            document.querySelector('footer h2').textContent = 'Most Liked Video on Ayurvedic Remedies for Body Pains (Telugu)';
+            translateButton.textContent = 'తెలుగు';
+        }
+        isTranslated = !isTranslated;
+
+        let tempRight = darkModeToggle.style.right;
+        darkModeToggle.style.right = translateButton.style.right;
+        translateButton.style.right = tempRight;
+    });
+</script>
+
+</body>
+</html>
